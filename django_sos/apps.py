@@ -9,7 +9,7 @@ class DjangoSosConfig(AppConfig):
     name = 'django_sos'
 
     def ready(self):
-        if settings.DEBUG:
+        if settings.DEBUG and settings.MEDIA_ROOT:
             import_module(settings.ROOT_URLCONF).urlpatterns.extend(static(
                 settings.MEDIA_URL,
                 document_root=settings.MEDIA_ROOT,
