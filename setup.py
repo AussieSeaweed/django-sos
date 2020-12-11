@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='django-sos',
-    version='0.0.2',
+    version='0.0.3',
     author='Juho Kim',
     author_email='juho-kim@outlook.com',
     description='A Django helper library',

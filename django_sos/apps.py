@@ -5,7 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-class DjangoSosConfig(AppConfig):
+class DjangoSOSConfig(AppConfig):
     name = 'django_sos'
 
     def ready(self):
