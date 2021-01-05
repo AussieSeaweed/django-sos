@@ -1,1 +1,1 @@
-default_app_config = 'django_sos.apps.DjangoSOSConfig'
+default_app_config: str = 'django_sos.apps.DjangoSOSConfig'
