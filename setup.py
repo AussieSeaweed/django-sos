@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='django-sos',
-    version='0.0.7',
+    version='0.0.8',
     author='Juho Kim',
     author_email='juho-kim@outlook.com',
     description='A Django helper library',
@@ -19,5 +19,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3.10',
     ],
     python_requires='>=3.9',
-    install_requires=['Django'],
+    install_requires=open('requirements.txt', 'r').readlines(),
 )

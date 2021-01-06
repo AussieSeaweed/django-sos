@@ -15,8 +15,11 @@ class DjangoSOSConfig(AppConfig):
 
         :return: None
         """
-        if settings.DEBUG_SERVE_MEDIA and settings.DEBUG and settings.MEDIA_ROOT:
-            import_module(settings.ROOT_URLCONF).urlpatterns.extend(static(
-                settings.MEDIA_URL,
-                document_root=settings.MEDIA_ROOT,
-            ))
+        try:
+            if settings.DEBUG_SERVE_MEDIA and settings.DEBUG and settings.MEDIA_ROOT:
+                import_module(settings.ROOT_URLCONF).urlpatterns.extend(static(
+                    settings.MEDIA_URL,
+                    document_root=settings.MEDIA_ROOT,
+                ))
+        except AttributeError:
+            pass
