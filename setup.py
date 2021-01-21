@@ -1,12 +1,15 @@
 import setuptools
 
+with open('README.rst', 'r') as long_description_file:
+    long_description = long_description_file.read()
+
 setuptools.setup(
     name='django-sos',
     version='0.0.1.dev2',
     author='Juho Kim',
     author_email='juho-kim@outlook.com',
     description='A Django helper library',
-    long_description=open('README.md', 'r').read(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/AussieSeaweed/django-sos',
     packages=setuptools.find_packages(),
