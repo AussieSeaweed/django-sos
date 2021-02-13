@@ -1,6 +1,6 @@
 import setuptools
 
-with open('README.rst', 'r') as long_description_file:
+with open('README.md', 'r') as long_description_file:
     long_description = long_description_file.read()
 
 setuptools.setup(
@@ -8,7 +8,7 @@ setuptools.setup(
     version='0.0.1.dev2',
     author='Juho Kim',
     author_email='juho-kim@outlook.com',
-    description='A Django helper library',
+    description='A Python package for various Django utilities',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/AussieSeaweed/django-sos',
@@ -25,5 +25,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3.10',
     ],
     python_requires='>=3.6',
-    install_requires=['django'],
+    install_requires=['Django'],
 )

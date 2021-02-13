@@ -1,6 +1,6 @@
 # django-sos
 
-Django-SOS is a Django helper library. The features are as follows:
+Django-SOS is a Python package for various Django utilities. The features are as follows:
 
 - automatically host media files during debugging: set DEBUG_SERVE_MEDIA=True in settings.py
 
